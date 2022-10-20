@@ -1,0 +1,16 @@
+programa {
+	funcao inicio() {
+		
+    real salario, abono, novoSalario
+    
+    escreva("Digite o seu salario: ")
+    leia(salario)
+    escreva("Digite o seu abono: ")
+    leia(abono)
+    
+    novoSalario = salario + abono
+    
+    escreva("Seu salario com abono Ž: ", novoSalario)		
+		
+	}
+}
