@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+
+     // AO TESTAR O CODIGO NAO COLOQUE ACENTO PARA NAO OCORRER ERRO E ESCREVER DA MESMA FORMA DO CODIGO
+    cadeia classe, reino, alimento
+    escreva ("Digite a classe do animal (Vertebrado ou Invertebrado): ")
+    leia (classe)
+    escreva ("Digite o reino do animal (Ave ou Mamifero ou Inseto ou Anelidio): ")
+    leia (reino)
+    escreva ("Digite o tipo de alimento do animal (Carnivoro ou Onivoro ou Herbivoro ou Hematofago): ")
+    leia (alimento)
+
+    se (classe == "Vertebrado" e reino == "Ave" e alimento == "Carnivoro")
+    escreva ("Aguia")
+    senao se (classe == "Vertebrado" e reino == "Ave" e alimento == "Onivoro")
+    escreva ("Pomba")
+    senao se (classe == "Vertebrado" e reino == "Mamifero" e alimento == "Onivoro")
+    escreva ("Homem")
+    senao se (classe == "Vertebrado" e reino == "Mamifero" e alimento == "Herbivoro")
+    escreva ("Vaca")
+    senao se (classe == "Invertebrado" e reino == "Inseto" e alimento == "Hematofago")
+    escreva ("Pulga")
+    senao se (classe == "Invertebrado" e reino == "Inseto" e alimento == "Herbivoro")
+    escreva ("Lagarta")
+    senao se (classe == "Invertebrado" e reino == "Anelidio" e alimento == "Hematofago")
+    escreva ("Sanguessuga")
+    senao se (classe == "Invertebrado" e reino == "Anelidio" e alimento == "Onivoro")
+    escreva ("Minhoca")
+    senao 
+      escreva ("Ops, algo deu errado!")
+  }
+}
