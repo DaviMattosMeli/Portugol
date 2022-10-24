@@ -1,0 +1,26 @@
+programa {
+  funcao inicio() {
+
+    inteiro num
+
+      escreva("Escreva um numero: ")
+      leia(num)
+
+      se (num >= 0  e num%2==0){
+        escreva("O numero é positivo e par")
+        }
+      
+      senao se num >= 0 e num%2==1){
+      escreva("O número é positivo e ímpar")
+      }
+
+        senao se  num< 0 e num%2==0){
+      escreva("O número é negativo e par")
+      }
+
+      senao 
+      escreva("O número é negativo e impar")
+    
+  }
+  
+}
