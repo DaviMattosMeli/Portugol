@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+    real salario, imposto
+     
+
+    escreva("Escreva o seu salário: ")
+    leia(salario)
+
+    se(salario < 0){
+      escreva("O salario precisa ser um número positivo")
+    }
+    senao se(salario >= 0 e salario <= 2000.00){
+      escreva("Voce esta isento do imposto de renda")
+    }
+    
+    senao se (salario >= 2000.01 e salario <= 3000.00){
+      imposto = (8 / 100) * salario
+      escreva("O imposto de renda do seu salario vai ser de : " , imposto )
+    }
+
+    senao se (salario >= 3000.01 e salario <= 4500.00){
+      imposto = (18/ 100) * salario
+      escreva("O imposto de renda do seu salario vai ser de : " , imposto )
+    }
+
+    senao{
+      imposto = (28/100) * salario
+      escreva("O imposto de renda do seu salario vai ser de : ", imposto)
+    }
+
+
+  }
+}
